@@ -6,8 +6,7 @@
 def intro():
     print("you've crash landed in a jungle. what should you do? ")
 
-    answer = input("A. climb a tree \nB. jump in the river \nC. go to sleep ")
-    answer = answer.upper()
+    answer = input("A. climb a tree \nB. jump in the river \nC. go to sleep ").upper()
 
     if answer =="A":
         climbedTree()
@@ -21,8 +20,7 @@ def intro():
 # user climbs a tree and runs into a python
 def climbedTree():
     print("you climbed the tree, but run into a python at the top")
-    answer = input("A. fight the python\nB. jump off the tree")
-    answer = answer.upper()
+    answer = input("A. fight the python\nB. jump off the tree").upper()
 
     if answer =="A":
         fightPython()
@@ -34,8 +32,7 @@ def climbedTree():
 # this is the step where you fall in the river
 def jumpInRiver():
     print("you jump in the water and start swimming downstream. What next?")
-    answer = input("A. pretend you're a floating log\nB. ride on the back of an alligator")
-    answer = answer.upper()
+    answer = input("A. pretend you're a floating log\nB. ride on the back of an alligator").upper()
 
     if answer == "A":
         floatLikeLog()
@@ -63,8 +60,7 @@ def goToSleep():
 # results of fighting the python
 def fightPython():
     print("you're able to hold the python off, but he leaves you with a nasty bite. What next?")
-    answer = input("A. use a wad of leaves as a bandage\nB. cover the bite with mud")
-    answer = answer.upper()
+    answer = input("A. use a wad of leaves as a bandage\nB. cover the bite with mud").upper()
 
     if answer == "A":
         bandage()
