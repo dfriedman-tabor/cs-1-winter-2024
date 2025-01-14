@@ -6,8 +6,6 @@ HEIGHT = 600
 
 # your variables here
 
-
-
 def move():
     pass
 
@@ -17,16 +15,14 @@ def move():
 # activate repeatedly if the key is held down
 def keyPressed(key):
     # an example of how to check if a certain key is pressed
-    if key == pygame.K_w:
-        pass
-
+    if key == pygame.K_UP:
+       pass
 
 
 # handles what should happen when a key is released
 def keyReleased(key):
     # an example of how to check if a certain key is released
-    if key == pygame.K_w:
-        pass
+    pass
 
 
 # defines how we want to draw our window
@@ -34,7 +30,11 @@ def draw(canvas):
     # set the background white - feel free to change this color!
     canvas.fill((255,255,255))
 
+    textsurface = myfont.render('hello', False, (0, 0, 0))
+    canvas.blit(textsurface, (200, 20))
+
     # add more shapes here
+
 
 # ************** DON'T TOUCH THE BELOW CODE ***************************
 import pygame, sys
