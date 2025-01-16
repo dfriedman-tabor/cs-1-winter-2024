@@ -30,8 +30,13 @@ def draw(canvas):
     # set the background white - feel free to change this color!
     canvas.fill((255,255,255))
 
+    # draw the word 'hello' at location (200, 20)
     textsurface = myfont.render('hello', False, (0, 0, 0))
     canvas.blit(textsurface, (200, 20))
+
+    # draw the number 7 at location (400, 20)
+    textsurface = myfont.render(str(7), False, (0, 0, 0))
+    canvas.blit(textsurface, (400, 20))
 
     # add more shapes here
 
