@@ -4,10 +4,14 @@
 WIDTH = 600
 HEIGHT = 600
 
+ai = False
+
 # your variables here
 
 def move():
-    pass
+
+    if ai == True:
+        pass
 
 
 # handles what should happen when a key is pressed
@@ -15,8 +19,10 @@ def move():
 # activate repeatedly if the key is held down
 def keyPressed(key):
     # an example of how to check if a certain key is pressed
-    if key == pygame.K_UP:
-       pass
+
+    global ai
+    if key == pygame.K_1:
+       ai = True
 
 
 # handles what should happen when a key is released
