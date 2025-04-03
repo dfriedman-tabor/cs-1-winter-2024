@@ -4,14 +4,10 @@
 WIDTH = 600
 HEIGHT = 600
 
-ai = False
 
 # your variables here
 
 def move():
-
-    if ai == True:
-        pass
 
 
 # handles what should happen when a key is pressed
@@ -20,9 +16,7 @@ def move():
 def keyPressed(key):
     # an example of how to check if a certain key is pressed
 
-    global ai
-    if key == pygame.K_1:
-       ai = True
+    pass
 
 
 # handles what should happen when a key is released
@@ -35,14 +29,6 @@ def keyReleased(key):
 def draw(canvas):
     # set the background white - feel free to change this color!
     canvas.fill((255,255,255))
-
-    # draw the word 'hello' at location (200, 20)
-    textsurface = myfont.render('hello', False, (0, 0, 0))
-    canvas.blit(textsurface, (200, 20))
-
-    # draw the number 7 at location (400, 20)
-    textsurface = myfont.render(str(7), False, (0, 0, 0))
-    canvas.blit(textsurface, (400, 20))
 
     # add more shapes here
 
